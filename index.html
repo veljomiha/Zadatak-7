@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <video id="video1" src="clip2.mp4" ></video>
+            <div class="buttons" id="buttons">
+                <div id="totalDuration" class="totalDuration">
+                    <div id="currDuration" class="currDuration"></div>
+                </div>
+                <div id="btnPlayPause">
+                    <img src="img/play.png" alt="play" id="imgPlay" class="imgPlay">
+                </div>
+                <div id="btnStop" class="btnStop">
+                    <img src="img/stop.png" alt="stop" id="imgStop" class="imgStop">
+                </div>
+                <div id="btnSound" class="btnSound">
+                    <img src="img/volume.png" alt="volume" id="imgSoundOn" class="imgSoundOn">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <div id="time" class="time">
+                    <p id="currentTime">0s</p>
+                    <p> / </p>
+                    <p id="totalTime"></p>
+                </div>
+                <div id="btnGear" class="btnGear">
+                    <img src="img/gear.png" alt="gear" id="imgGear" class="imgGear">
+                    <div id="speed" class="speed">
+                        <div id="verySlow">0.5x</div>
+                        <div id="slow">0.75x</div>
+                        <div id="normal">1x</div>
+                        <div id="fast">1.5x</div>
+                        <div id="veryFast">2x</div>
+                    </div>
+                </div>
+                <div id="btnFullScreen" class="btnFullScreen">
+                    <img src="img/zoom.png" alt="fullscreen" id="imgFullScreen" class="imgFullScreen"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8d8d862;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.main {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.main:hover .buttons {
+    transform: translateY(0);
+    transition: 0.2s;
+}
+
+#video1 {
+    width: 100%;
+    height: 100%;
+}
+
+.imgPlay,
+.imgGear,
+.imgStop,
+.imgSoundOn,
+.imgFullScreen {
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
+    cursor: pointer;
+}
+
+.speed {
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 210px;
+    margin-left: -27px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.speed>* {
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.speed>*:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 10px 5px;
+    transform: translateY(100%) translateY(-5px);
+    transition: 0.2s;
+}
+
+.btnGear {
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+}
+
+.imgGear {
+    cursor: pointer;
+}
+
+.btnFullScreen{
+    position: absolute;
+    right: 0;
+    margin: 0 5px;
+}
+
+.totalDuration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.currDuration {
+    height: 7px;
+    background-color: red;
+}
+
+.time{
+    color: white;
+    margin-left: 10px;
+}
+.time>* {
+    margin:0 2px;
+}
+
+.buttons>div {
+    display: flex;
+    align-items: center;
+}
+
+.btnSound:hover .slider {
+    display: flex;
+    transition: 0.2s;
+}
+
+input[type="range"] {
+    display: none;
+    margin-left:5px;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 7px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+::-webkit-slider-runnable-track {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.1px;
+    height: 7px;
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw white;
+}
