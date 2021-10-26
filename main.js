@@ -140,9 +140,9 @@ video.addEventListener("timeupdate",function(){
     if(video.ended){
         imgPlay.src = "img/repeat.png";
     }
-    let currentTimeC = video.currentTime;
-    let currentTimeC2 = parseFloat(currentTimeC).toFixed(0);
-    currentTime.textContent = currentTimeC2 +"s";
+    // let currentTimeC = video.currentTime;
+    // let currentTimeC2 = parseFloat(currentTimeC).toFixed(0);
+    // currentTime.textContent = currentTimeC2 +"s";
 })
 
 function changeCurrTime(e) {
@@ -168,10 +168,9 @@ function fullScreen() {
 }
 btnFullScreen.addEventListener("click",fullScreen);
 
-
 //Time
-window.addEventListener("load",function(){
-    var totalTimeC = video.duration;
-    var totalTimeC2 = parseFloat(totalTimeC).toFixed(0);
-    totalTime.textContent = totalTimeC2 + "s";
-})
+// window.addEventListener("load",function(){
+//     var totalTimeC = video.duration;
+//     var totalTimeC2 = parseFloat(totalTimeC).toFixed(0);
+//     totalTime.textContent = totalTimeC2 + "s";
+// })
