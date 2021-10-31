@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: #d8d8d862;
+    /* background-color: #d8d8d862; */
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -74,7 +77,6 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0;
-    /* background-color: rgb(0, 0, 0); */
     background-color: rgba(0, 0, 0,0.5);
     padding: 20px 5px 10px 5px;
     transform: translateY(100%) translateY(-4px);
