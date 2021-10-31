@@ -100,10 +100,10 @@ imgSoundOn.addEventListener("click", function(){
     }
     else {
         imgSoundOn.src = "img/volume.png";
-        slider.value;
+        slider.value = video.volume * 100;
     }
 })
-
+console.log(slider.value);
 // Sound range
 slider.addEventListener("change", function () {
     video.volume = slider.value / 100;
@@ -164,3 +164,12 @@ btnFullScreen.addEventListener("click", function(){
         document.exitFullscreen();
     }
 })
+
+// document.addEventListener("keyup", function(e){
+//     if(e.keyCode == "27"){
+//         if (imgFullScreen.src.match("img/exit-full-screen.png")) {
+//         imgFullScreen.src = "img/zoom.png";
+//         document.exitFullscreen();
+//         }
+//     }
+// })
